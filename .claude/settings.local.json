@@ -1,0 +1,8 @@
+{
+  "permissions": {
+    "allow": [
+      "Read(//c/Users/yadav/AppData/Local/Temp/claude/c--Users-yadav-Desktop-Portfolio-Yadava-H-C/33d4824f-60bc-43b2-a70f-05365fb1725d/scratchpad/docx_extract/word/**)",
+      "Bash(sed -e 's/<w:p[ >]/\\\\n<w:p>/g' -e 's/<[^>]*>//g' document.xml)"
+    ]
+  }
+}
