@@ -1,7 +1,6 @@
 "use client";
 
 import dynamic from "next/dynamic";
-import Image from "next/image";
 import { useEffect, useRef, useState } from "react";
 import {
   motion,
@@ -18,7 +17,8 @@ import {
 } from "react-icons/fi";
 import { profile, socials } from "@/data/portfolio";
 
-const HeroScene = dynamic(() => import("./HeroScene"), { ssr: false });
+const TechBackground = dynamic(() => import("./TechBackground"), { ssr: false });
+const CodingScene = dynamic(() => import("./CodingScene"), { ssr: false });
 
 function RoleRotator() {
   const [i, setI] = useState(0);
@@ -77,9 +77,9 @@ export default function Hero() {
       ref={ref}
       className="relative flex min-h-[100svh] w-full items-center overflow-hidden"
     >
-      {/* 3D background */}
+      {/* tech node-network background */}
       <div className="absolute inset-0 z-0">
-        <HeroScene />
+        <TechBackground />
       </div>
 
       {/* gradient vignettes to blend scene + content */}
@@ -186,42 +186,8 @@ export default function Hero() {
             transition={{ duration: 1.1, delay: 0.4, ease: [0.16, 1, 0.3, 1] }}
             className="relative h-[22rem] w-[18rem] sm:h-[28rem] sm:w-[23rem] lg:h-[34rem] lg:w-[27rem]"
           >
-            {/* rotating metallic rings */}
-            <div className="absolute inset-0 -z-10 animate-spin-slow rounded-full border border-white/[0.06]" />
-            <div
-              className="absolute inset-6 -z-10 rounded-full border border-white/[0.05]"
-              style={{ animation: "spin 30s linear infinite reverse" }}
-            />
-            {/* radial backlight */}
-            <div className="absolute inset-0 -z-10 rounded-full bg-[radial-gradient(circle_at_50%_38%,rgba(200,200,210,0.12),transparent_55%)] blur-2xl" />
-
-            {/* full rectangular image with all four edges feathered so it merges into the dark theme */}
-            <div
-              className="group relative h-full w-full"
-              style={{
-                WebkitMaskImage:
-                  "linear-gradient(to right, transparent 0%, #000 15%, #000 85%, transparent 100%), linear-gradient(to bottom, transparent 0%, #000 12%, #000 82%, transparent 100%)",
-                WebkitMaskComposite: "source-in",
-                maskImage:
-                  "linear-gradient(to right, transparent 0%, #000 15%, #000 85%, transparent 100%), linear-gradient(to bottom, transparent 0%, #000 12%, #000 82%, transparent 100%)",
-                maskComposite: "intersect",
-              }}
-            >
-              <Image
-                src={profile.image}
-                alt={profile.name}
-                fill
-                priority
-                sizes="(max-width: 768px) 80vw, 27rem"
-                className="select-none object-cover object-top grayscale contrast-[1.05] brightness-[0.9] transition-all duration-700 group-hover:grayscale-0 group-hover:brightness-100"
-              />
-              {/* soft vignette so the bright studio background dissolves toward the edges */}
-              <div className="pointer-events-none absolute inset-0 bg-[radial-gradient(ellipse_75%_82%_at_50%_42%,transparent_55%,rgba(0,0,0,0.55)_85%,#000_100%)]" />
-              {/* metallic duotone wash */}
-              <div className="pointer-events-none absolute inset-0 mix-blend-overlay bg-[linear-gradient(135deg,rgba(190,190,200,0.2),transparent_45%,rgba(120,120,130,0.16))]" />
-              {/* bottom fade into the page */}
-              <div className="pointer-events-none absolute inset-x-0 bottom-0 h-1/3 bg-gradient-to-t from-black via-black/55 to-transparent" />
-            </div>
+            {/* animated developer-at-laptop scene */}
+            <CodingScene />
 
             {/* floating stat chips */}
             <FloatingChip
