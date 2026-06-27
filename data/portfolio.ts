@@ -13,7 +13,7 @@ export const profile = {
   location: "Bengaluru, India",
   email: "yadavahc333@gmail.com",
   phone: "8904030441",
-  image: "/images/YadavaProfilePhoto.png",
+  image: "/images/Cartoon_Profile.png",
   resumeHighlights: [
     { value: "9.0", label: "CGPA" },
     { value: "10+", label: "Hackathon Wins & Finals" },
