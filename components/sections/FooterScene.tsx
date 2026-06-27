@@ -144,28 +144,6 @@ function PaperPlane() {
   );
 }
 
-/* ----------------------------- watermark ------------------------------ */
-function Watermark() {
-  const letters = "YADAVA".split("");
-  return (
-    <h3 className="flex select-none justify-center leading-none">
-      {letters.map((ch, i) => (
-        <motion.span
-          key={i}
-          initial={{ y: "40%", opacity: 0 }}
-          whileInView={{ y: "0%", opacity: 1 }}
-          viewport={{ once: true }}
-          transition={{ duration: 0.8, delay: i * 0.08, ease: [0.16, 1, 0.3, 1] }}
-          className="silver-text-shimmer font-display text-[18vw] font-bold"
-          style={{ animationDelay: `${i * 0.25}s` }}
-        >
-          {ch}
-        </motion.span>
-      ))}
-    </h3>
-  );
-}
-
 export default function FooterScene() {
   return (
     <div className="relative mt-20 overflow-hidden pb-2">
@@ -179,17 +157,10 @@ export default function FooterScene() {
         whileInView={{ opacity: 1, y: 0 }}
         viewport={{ once: true }}
         transition={{ duration: 0.7 }}
-        className="relative z-10 px-5"
+        className="relative z-10 px-5 pb-10"
       >
         <Typewriter />
       </motion.div>
-
-      {/* animated giant name */}
-      <div className="relative mt-12">
-        <Watermark />
-        {/* soft reflection glow under the name */}
-        <div className="pointer-events-none absolute inset-x-0 bottom-0 h-24 bg-gradient-to-t from-ink-900 to-transparent" />
-      </div>
     </div>
   );
 }
