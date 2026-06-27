@@ -26,7 +26,7 @@ const TOKENS: Tok[] = [
   { t: "const", c: kw }, { t: " " }, { t: "dev", c: prop }, { t: " = {", c: pn }, { t: "\n" },
   { t: "  " }, { t: "name", c: prop }, { t: ": ", c: pn }, { t: '"Yadava H C"', c: str }, { t: ",", c: pn }, { t: "\n" },
   { t: "  " }, { t: "role", c: prop }, { t: ": ", c: pn }, { t: '"Full-Stack Dev"', c: str }, { t: ",", c: pn }, { t: "\n" },
-  { t: "  " }, { t: "stack", c: prop }, { t: ": [", c: pn }, { t: '"Next.js"', c: str }, { t: ", ", c: pn }, { t: '"AI"', c: str }, { t: "],", c: pn }, { t: "\n" },
+  { t: "  " }, { t: "stack", c: prop }, { t: ": [", c: pn }, { t: '"React.js"', c: str }, { t: ", ", c: pn }, { t: '"AI"', c: str }, { t: "],", c: pn }, { t: "\n" },
   { t: "  " }, { t: "focus", c: prop }, { t: ": ", c: pn }, { t: '"AI products"', c: str }, { t: ",", c: pn }, { t: "\n" },
   { t: "};", c: pn }, { t: "\n" },
   { t: "\n" },
