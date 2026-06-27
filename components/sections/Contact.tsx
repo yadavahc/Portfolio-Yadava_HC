@@ -1,6 +1,5 @@
 "use client";
 
-import { motion } from "framer-motion";
 import {
   FiGithub,
   FiLinkedin,
@@ -14,6 +13,7 @@ import { TbCode } from "react-icons/tb";
 import { profile, socials } from "@/data/portfolio";
 import Reveal from "@/components/ui/Reveal";
 import ContactForm from "./ContactForm";
+import FooterScene from "./FooterScene";
 
 const links = [
   { label: "GitHub", href: socials.github, icon: FiGithub },
@@ -104,18 +104,8 @@ export default function Contact() {
         </Reveal>
       </div>
 
-      {/* giant watermark name */}
-      <div className="relative mt-20 select-none overflow-hidden">
-        <motion.h3
-          initial={{ opacity: 0, y: 40 }}
-          whileInView={{ opacity: 1, y: 0 }}
-          viewport={{ once: true }}
-          transition={{ duration: 1 }}
-          className="bg-gradient-to-b from-white/[0.08] to-transparent bg-clip-text text-center font-display text-[18vw] font-bold leading-none text-transparent"
-        >
-          YADAVA
-        </motion.h3>
-      </div>
+      {/* animated footer scene: terminal + paper plane + animated name */}
+      <FooterScene />
 
       <footer className="border-t border-white/[0.06]"><center>
         <div className="mx-auto flex max-w-7xl flex-col items-center justify-between gap-3 px-5 py-7 text-sm text-silver-500 sm:flex-row sm:px-8">
