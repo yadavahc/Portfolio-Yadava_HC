@@ -12,8 +12,8 @@ import {
 import { SiLeetcode, SiGeeksforgeeks } from "react-icons/si";
 import { TbCode } from "react-icons/tb";
 import { profile, socials } from "@/data/portfolio";
-import SectionHeading from "@/components/ui/SectionHeading";
 import Reveal from "@/components/ui/Reveal";
+import ContactForm from "./ContactForm";
 
 const links = [
   { label: "GitHub", href: socials.github, icon: FiGithub },
@@ -81,6 +81,9 @@ export default function Contact() {
               </span>
           </div>
         </Reveal>
+
+        {/* contact form */}
+        <ContactForm />
 
         {/* social grid */}
         <Reveal delay={0.25}>
