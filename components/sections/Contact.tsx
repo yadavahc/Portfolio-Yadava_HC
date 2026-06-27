@@ -119,10 +119,6 @@ export default function Contact() {
       <footer className="border-t border-white/[0.06]">
         <div className="mx-auto flex max-w-7xl flex-col items-center justify-between gap-3 px-5 py-7 text-sm text-silver-500 sm:flex-row sm:px-8">
           <p>© {new Date().getFullYear()} Yadava H C. All rights reserved.</p>
-          <p className="flex items-center gap-1.5">
-            Designed &amp; built with
-            <span className="text-rose-300/80">♥</span> · Next.js · Three.js
-          </p>
         </div>
       </footer>
     </section>

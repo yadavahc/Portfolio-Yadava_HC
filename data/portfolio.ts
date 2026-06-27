@@ -9,7 +9,7 @@ export const profile = {
     "Problem Solver",
   ],
   tagline:
-    "Full Stack Developer crafting AI-powered products — turning ambitious ideas into shipped, award-winning experiences.",
+    "Full Stack Developer building intelligent web experiences, transforming ideas into scalable AI-powered products.",
   location: "Bengaluru, India",
   email: "yadavahc333@gmail.com",
   phone: "8904030441",
@@ -18,7 +18,7 @@ export const profile = {
     { value: "9.0", label: "CGPA" },
     { value: "10+", label: "Hackathon Wins & Finals" },
     { value: "150+", label: "DSA Problems Solved" },
-    { value: "1000+", label: "Students Impacted" },
+    { value: "15+", label: "Projects Built" },
   ],
 };
 
@@ -34,7 +34,7 @@ export const socials = {
 
 export const about = {
   intro:
-    "I'm Yadava H C, an Information Science engineering student and Full Stack Developer based in Bengaluru. I build AI-powered, production-grade web applications — from multilingual legal assistants to smart-campus energy platforms — and I love translating real problems into clean, scalable products. My work has been recognized at national hackathons and India's first AI Agent Builders Award.",
+    "I'm Yadava H C, an Information Science Engineering student and Full Stack Developer based in Bengaluru. I architect and develop AI-powered, production-grade web applications using modern technologies, focusing on scalable system design, intuitive user experiences, and real-world problem solving. My work has been recognized at national hackathons and with India's First AI Agent Builders Award.",
   education: [
     {
       school: "The Oxford College of Engineering, Bengaluru",
