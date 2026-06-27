@@ -96,7 +96,7 @@ export default function Hero() {
         {/* ---------------- Text column ---------------- */}
         <motion.div
           style={{ x: textX, y: textY }}
-          className="order-2 lg:order-1 lg:col-span-7"
+          className="order-1 lg:col-span-7"
         >
           <motion.div
             initial={{ opacity: 0, y: 18 }}
@@ -191,7 +191,7 @@ export default function Hero() {
         {/* ---------------- Profile image column (right, blended) ---------------- */}
         <motion.div
           style={{ x: imgX, y: imgY }}
-          className="order-1 flex justify-center lg:order-2 lg:col-span-5 lg:justify-end"
+          className="order-2 flex justify-center lg:col-span-5 lg:justify-end"
         >
           <motion.div
             initial={{ opacity: 0, scale: 0.92, filter: "blur(12px)" }}
