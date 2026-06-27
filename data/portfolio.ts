@@ -354,8 +354,8 @@ export type DsaNode = {
 export const dsaJourney: DsaNode[] = [
   {
     platform: "Take U Forward (TUF)",
-    solved: "125+",
-    count: 125,
+    solved: "115+",
+    count: 115,
     note: "Solved across Easy, Medium & Hard difficulty levels.",
     image: "/images/Tuf_Profile.png",
     link: "https://takeuforward.org/profile/yadava_h_c",
@@ -372,8 +372,8 @@ export const dsaJourney: DsaNode[] = [
   },
   {
     platform: "LeetCode",
-    solved: "70+",
-    count: 70,
+    solved: "60+",
+    count: 60,
     note: "Earned the 50 Days Badge for consistent coding practice.",
     image: "/images/Leetcode_Profile.png",
     link: "https://leetcode.com/u/uDbVJTA37J/",
