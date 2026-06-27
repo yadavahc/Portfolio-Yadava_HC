@@ -315,7 +315,8 @@ export const certificates: Cert[] = [
     issuer: "Google",
     skills:
       "Generative AI · Foundation Models · LLMs · AI Applications · Responsible AI",
-    image: "/images/Google_Prompt_Edition_Certificate.jpeg",
+    image: "/images/Introduction_to_genai_google.png",
+    link: "https://www.skills.google/profile/badges",
   },
   {
     title: "SQL (Basic)",
@@ -335,7 +336,7 @@ export const certificates: Cert[] = [
     title: "Getting Started with AI",
     issuer: "IBM",
     skills: "AI · ML Fundamentals · LLMs · AI Ethics · AI Use Cases",
-    image: "/images/IBM_AI_Agent_Certificate.png",
+    image: "/images/Getting_Started_with_AI_IBM.png",
     link: "https://www.credly.com/badges/773f7127-3396-423b-9a04-73edb458fd0a/public_url",
   },
 ];
