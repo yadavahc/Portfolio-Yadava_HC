@@ -49,7 +49,7 @@ export default function Contact() {
         <Reveal delay={0.1}>
           <p className="mx-auto mt-5 max-w-xl text-base text-silver-300 sm:text-lg">
             Open to internships, full-time roles, and ambitious collaborations.
-            Drop a message — I usually reply fast.
+            Drop a message.
           </p>
         </Reveal>
 
@@ -116,10 +116,10 @@ export default function Contact() {
         </motion.h3>
       </div>
 
-      <footer className="border-t border-white/[0.06]">
+      <footer className="border-t border-white/[0.06]"><center>
         <div className="mx-auto flex max-w-7xl flex-col items-center justify-between gap-3 px-5 py-7 text-sm text-silver-500 sm:flex-row sm:px-8">
           <p>© {new Date().getFullYear()} Yadava H C. All rights reserved.</p>
-        </div>
+        </div></center>
       </footer>
     </section>
   );

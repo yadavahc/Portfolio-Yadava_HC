@@ -98,19 +98,6 @@ export default function Hero() {
           style={{ x: textX, y: textY }}
           className="order-1 lg:col-span-7"
         >
-          <motion.div
-            initial={{ opacity: 0, y: 18 }}
-            animate={{ opacity: 1, y: 0 }}
-            transition={{ duration: 0.7, delay: 0.3 }}
-            className="mb-6 inline-flex items-center gap-2 rounded-full border border-white/10 bg-white/[0.03] px-4 py-1.5 text-xs text-silver-300 backdrop-blur"
-          >
-            <span className="relative flex h-2 w-2">
-              <span className="absolute inline-flex h-full w-full animate-ping rounded-full bg-emerald-300/70" />
-              <span className="relative inline-flex h-2 w-2 rounded-full bg-emerald-300" />
-            </span>
-            Available for opportunities · {profile.location}
-          </motion.div>
-
           <h1 className="font-display text-[2.7rem] font-bold leading-[1.02] tracking-tight text-white sm:text-6xl lg:text-7xl">
             <motion.span
               initial={{ opacity: 0, y: 24 }}

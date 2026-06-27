@@ -91,12 +91,6 @@ export default function Navbar() {
           </div>
 
           <div className="flex items-center gap-2">
-            <a
-              href="#contact"
-              className="hidden rounded-full bg-silver-gradient px-4 py-2 text-sm font-semibold text-black transition-transform hover:scale-[1.04] active:scale-95 sm:inline-block"
-            >
-              Let&apos;s talk
-            </a>
             <button
               onClick={() => setOpen((v) => !v)}
               className="grid h-9 w-9 place-items-center rounded-full text-white lg:hidden"

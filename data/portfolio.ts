@@ -216,6 +216,7 @@ export const experiences: Experience[] = [
       "Contributed to Implanto 365, a clinic management system with patient records, appointment scheduling, treatment tracking & analytics.",
       "Designed an SEO-optimized corporate website for Sunwin Power Solutions, improving visibility & lead generation.",
       "Built OxyVerse, a VTU student resource platform with study materials, CGPA calculators & scholarship updates.",
+      "Developed a responsive website for Coorg Cafe, a cafe based in Anekal, Bengaluru, enhancing its online presence with a modern UI, digital menu, and customer friendly experience.",
     ],
   },
   {
@@ -273,8 +274,8 @@ export const achievements: Achievement[] = [
     image: "/images/CSI_WEB_Hackathon_Certificate.jpg",
   },
   {
-    title: "Devkreeda Finale Moment",
-    detail: "On-stage at Anokha 2026, The Oxford College of Engineering.",
+    title: "Devkreeda Certificate",
+    detail: "Anokha 2026, The Oxford College of Engineering.",
     image: "/images/Anokha_Devkreeda_Certficate.jpeg",
   },
 ];
