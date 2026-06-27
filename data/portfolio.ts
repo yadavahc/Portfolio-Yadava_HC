@@ -194,6 +194,21 @@ export const projects: Project[] = [
     live: "https://oxyverse-vtu-notes.netlify.app/",
     accent: "#c2bcc6",
   },
+  {
+    title: "LogiFlow",
+    stack: "Next.js · AI · Real-time Tracking",
+    description:
+      "AI-powered logistics and shipment management platform with AI-assisted route planning, real-time tracking, and live fleet monitoring to improve operational efficiency and customer communication.",
+    highlights: [
+      "AI-assisted route planning & weather-aware logistics",
+      "Real-time shipment tracking with role-based dashboards",
+      "Automated alerts & live fleet monitoring",
+    ],
+    image: "/images/Logistics_Project.png",
+    github: "https://github.com/yadavahc/logistics-hackzion",
+    live: "https://logistics-hackzion.vercel.app/",
+    accent: "#bcc6c0",
+  },
 ];
 
 export type Experience = {
