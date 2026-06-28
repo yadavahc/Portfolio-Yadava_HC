@@ -2,8 +2,8 @@
 
 import { useEffect, useState } from "react";
 import { AnimatePresence, motion, useScroll, useSpring } from "framer-motion";
-import { FiMenu, FiX, FiDownload } from "react-icons/fi";
-import { navLinks, profile } from "@/data/portfolio";
+import { FiMenu, FiX } from "react-icons/fi";
+import { navLinks } from "@/data/portfolio";
 
 export default function Navbar() {
   const [scrolled, setScrolled] = useState(false);
@@ -91,15 +91,6 @@ export default function Navbar() {
           </div>
 
           <div className="flex items-center gap-2">
-            <a
-              href={profile.resume}
-              target="_blank"
-              rel="noreferrer"
-              download
-              className="hidden items-center gap-2 rounded-full bg-silver-gradient px-4 py-2 text-sm font-semibold text-black transition-transform hover:scale-[1.04] active:scale-95 sm:inline-flex"
-            >
-              <FiDownload size={15} /> Resume
-            </a>
             <button
               onClick={() => setOpen((v) => !v)}
               className="grid h-9 w-9 place-items-center rounded-full text-white lg:hidden"

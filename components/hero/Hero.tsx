@@ -14,7 +14,6 @@ import {
   FiLinkedin,
   FiMail,
   FiArrowDownRight,
-  FiDownload,
 } from "react-icons/fi";
 import { profile, socials } from "@/data/portfolio";
 
@@ -141,16 +140,6 @@ export default function Hero() {
             >
               View my work
               <FiArrowDownRight className="transition-transform group-hover:translate-x-0.5 group-hover:translate-y-0.5" />
-            </a>
-            <a
-              href={profile.resume}
-              target="_blank"
-              rel="noreferrer"
-              download
-              className="group inline-flex items-center gap-2 rounded-full border border-white/15 bg-white/[0.02] px-6 py-3 text-sm font-semibold text-white backdrop-blur transition-colors hover:bg-white/[0.07]"
-            >
-              <FiDownload className="transition-transform group-hover:translate-y-0.5" />
-              Resume
             </a>
             <a
               href="#contact"
